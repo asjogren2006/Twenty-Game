@@ -14,7 +14,7 @@ var lcomputer = []
 
 var luser = []
 
-alert("We will be playing 'Twenty'. The goal is to get as many cards as you can but the cards sums must not equal more than twenty, you also need to get more than the computer. If you need another number press, `Y`, if you want to stop playing press, 'N'")
+alert("We will be playing a game called 'Twenty'. To win this game, you have to draw numbers until you get close to 20 but not over twenty. If you and the computer are under 20, you need to be closer to win. If you need another number press, `Y`, if you want to stop playing press, 'N'")
 
 do {
  
@@ -24,7 +24,7 @@ do {
      
     var points1 = (points1 + random1);
    
-    alert(`Computer drew ${random1}. Computers total is ${points1}`)
+    alert(`The computer drew ${random1}. Computers total is ${points1}`)
    
   } while (points1 <= 16);
  
@@ -35,7 +35,7 @@ do {
    
     var points2 = (points2+random2)
    
-    var useran = prompt(`You drew ${random2} and your new total is ${points2}, press "N" to stop.`)
+    var useran = prompt(`You just drew ${random2} and your new total is ${points2}, press "N" to stop.`)
    
      
   } while (points2 <= 20 && useran != "N")
